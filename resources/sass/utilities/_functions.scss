@@ -1,0 +1,14 @@
+// ==========================================================================
+// Functions
+// ===========================================================================
+
+
+//Calculate em values
+@function em($target, $context: $font-size-base) {
+	@return ($target / $context) * 1em;	
+}
+
+@function rem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}

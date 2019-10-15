@@ -1,0 +1,29 @@
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
+html {
+	font-size: 16px;
+	// overflow-x: hidden;
+}
+
+body {
+	font-size: rem($font-size-base);
+	font-family: $body-font-family;
+	line-height: $line-height-base;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: $body-font-color;
+	overflow-x: hidden;
+	background-color: $body-bg;
+	position: relative;
+}
+
+.wrap {
+	max-width: 1250px;
+	@extend %wrap;
+}

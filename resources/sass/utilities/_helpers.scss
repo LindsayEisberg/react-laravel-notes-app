@@ -1,0 +1,45 @@
+/* ==========================================================================
+// Helpers
+============================================================================= */
+
+%clearfix {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+%wrap {
+
+    padding: 0 rem(24px);
+    margin-left: auto;
+	margin-right: auto;
+    // z-index: 999;
+}
+
+.srt {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.absolute {
+	@include m(center) {
+		@include absolutecenter('both');
+		@include m(contact) {
+			top: 52%;
+		}
+	}
+	@include m(v) {
+		@include absolutecenter('y');
+	}
+	@include m(h) {
+		@include absolutecenter('x');
+	}
+}

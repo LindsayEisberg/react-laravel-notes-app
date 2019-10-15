@@ -1,0 +1,81 @@
+
+// BEM selectors
+
+@mixin e($element) {
+	&__#{$element} {
+		@content;
+	}
+}
+
+@mixin m($modifier) {
+	&--#{$modifier} {
+		@content;
+	}
+}
+
+// Media Queries
+
+@mixin bp($point) {
+
+    @if $point == xxxl { // 1200px
+        @media (max-width: 1200px) { @content; }
+    }
+    @else if $point == xxl { // 1100
+        @media (max-width: 1100px) { @content; }
+    }
+
+
+    @else if $point == xl { // 1050px
+        @media (max-width: 1050px) { @content; }
+    }
+    @else if $point == nav { // 1000px
+        @media (max-width: 1000px) { @content; }
+    }
+    @else if $point == lg { // 960px
+        @media (max-width: 992px) { @content; }
+    }
+
+
+    @else if $point == md { // 768px
+        @media (max-width: 768px)  { @content; }
+    }
+
+     @else if $point == md_less { // 768px
+        @media (max-width: 767px)  { @content; }
+    }
+
+    @else if $point == sm { // 600px
+        @media (max-width: 600px)  { @content; }
+    }
+     @else if $point == min_sm { // 600px
+        @media (min-width: 600px)  { @content; }
+    }
+
+    @else if $point == xs { // 479px
+        @media (max-width: 479px)  { @content; }
+    }
+    @else if $point == xxs { // 320px (iphone 5)
+        @media (max-width: 320px)  { @content; }
+    }
+
+
+}
+
+
+//Absolute Center
+@mixin absolutecenter($axis: "both"){
+  position:absolute;
+  @if $axis == "y"{
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @if $axis == "x"{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @if $axis == "both"{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+}
