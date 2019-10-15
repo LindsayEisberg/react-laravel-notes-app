@@ -67325,7 +67325,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, __RouterContext, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, __RouterContext, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73688,9 +73688,9 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "wrap"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-        className: "nav flex justify-end"
+        className: "nav flex flex-wrap justify-end-ns justify-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        className: "fw5 nav__item near-black link underline-hover mh4 ph2 pv1",
+        className: "fw5 nav__item near-black link underline-hover mh4 ph2 pv1 mb0-ns mb3",
         activeClassName: "is-active dark-green underline",
         exact: true,
         to: "/"
