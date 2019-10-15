@@ -16,6 +16,7 @@ class EditNote extends Component {
         this.handleSubmit = this.handleSubmit.bind(this)
         this.hasError = this.hasError.bind(this)
         this.renderError = this.renderError.bind(this)
+       
     }
     handleChange(event) {
         const {name, value, type} = event.target
@@ -30,7 +31,7 @@ class EditNote extends Component {
             title: this.state.title,
             copy: this.state.copy
         }).then(response => {
-
+            // console.log(response)
            this.props.history.push('/');
         }).catch(error => {
             this.setState({
@@ -41,6 +42,7 @@ class EditNote extends Component {
     // Get single task to be edited
     getNotes() {
         axios.get(`/api/notes/${this.props.match.params.id}/edit`).then(response => 
+            
             this.setState({
                 notes: [response.data.note],
                 title: response.data.note.title,
@@ -100,7 +102,7 @@ class EditNote extends Component {
                                 />
                                 {this.renderError('copy')}
                             </div>
-                            <button type="submit" className="btn btn--primary ba bw1 b--dark-green near-white tc dib">Create Task</button>
+                            <button type="submit" className="btn btn--primary ba bw1 b--dark-green near-white tc dib">Update Note</button>
                         </form>
                     </div>
                 </div>

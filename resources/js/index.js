@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {HashRouter, Switch, Route} from 'react-router-dom';
 
-import Header from './components/Header'
+import Header from './components/Header';
 import App from './components/App';
 import EditNote from './components/EditNote';
 import CreateNote from './components/CreateNote';
@@ -11,7 +11,7 @@ import SingleNote from './components/SingleNote';
 class Home extends Component {
     render() {
         return (
-             <BrowserRouter>
+             <HashRouter>
                 <div>
                     <Header />
                     <Switch>   
@@ -21,7 +21,7 @@ class Home extends Component {
                         <App />  
                     </Switch>
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         )
     }
 }

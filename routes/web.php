@@ -11,11 +11,14 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('app');
-// });
+Route::get('/', function () {
+    return view('app');
+});
 
-Route::view('{path?}', 'app');
+// Route::view('{path?}', 'app');
 //create all routes
 // Route::resource('notes', 'NoteController');
 
+// Route::get('{path?}', function () {
+//     return view('app');
+// });
