@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Title for the first note",
+    "copy": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ratione mollitia sequi atque vel cumque vero nulla aut molestiae blanditiis laudantium iste, doloremque dolor ipsam expedita, laborum odio quam possimus!"
+  },
+  {
+    "id": 2,
+    "title": "Title for the second note",
+    "copy": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ratione mollitia sequi atque vel cumque vero nulla aut molestiae blanditiis laudantium iste, doloremque dolor ipsam expedita, laborum odio quam possimus!"
+  },
+  {
+    "id": 3,
+    "title": "Title for the third note",
+    "copy": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ratione mollitia sequi atque vel cumque vero nulla aut molestiae blanditiis laudantium iste, doloremque dolor ipsam expedita, laborum odio quam possimus!"
+  },
+  {
+    "id": 4,
+    "title": "Title for the fourth note",
+    "copy": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ratione mollitia sequi atque vel cumque vero nulla aut molestiae blanditiis laudantium iste, doloremque dolor ipsam expedita, laborum odio quam possimus!"
+  }
+]

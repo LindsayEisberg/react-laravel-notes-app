@@ -73211,15 +73211,13 @@ function (_Component) {
       return this.state.notes.map(function (note) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           key: note.id,
-          className: "all-notes"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "all-notes__item bg-near-white mb3 "
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
           className: "no-underline db pv3 ph4",
           to: "/".concat(note.id)
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
           className: "near-black fw4 no-underline"
-        }, note.title))));
+        }, note.title)));
       });
     } // Get all Notes from database. 
 
@@ -73281,7 +73279,9 @@ function (_Component) {
         alt: ""
       })) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "pt3"
-      }, this.renderNotes(), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "all-notes"
+      }, this.renderNotes()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "flex justify-start btn--container mt4"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         className: "btn btn--ghost b--near-black ba bw1 dib near-black",
@@ -73440,7 +73440,7 @@ function (_Component) {
         id: "copy",
         onChange: this.handleChange,
         value: this.state.copy,
-        className: "form__input form__input--textarea db w-100 ".concat(this.hasError('copy') ? 'is-invalid' : ''),
+        className: "form__input db w-100 ".concat(this.hasError('copy') ? 'is-invalid' : ''),
         name: "copy",
         rows: "10",
         placeholder: "Enter Note Copy*"

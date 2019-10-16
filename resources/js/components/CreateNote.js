@@ -89,7 +89,7 @@ class CreateNote extends Component {
                                     id="copy"
                                     onChange={this.handleChange}
                                     value={this.state.copy}
-                                    className={`form__input form__input--textarea db w-100 ${this.hasError('copy') ? 'is-invalid' : ''}`}
+                                    className={`form__input db w-100 ${this.hasError('copy') ? 'is-invalid' : ''}`}
                                     name="copy"
                                     rows="10"
                                     placeholder="Enter Note Copy*" 

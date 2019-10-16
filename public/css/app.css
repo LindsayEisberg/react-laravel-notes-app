@@ -10816,19 +10816,23 @@ body {
 /* 4. Form
 ========================================================================== */
 
-.form__input {
+.form__input,
+.form__input--textarea {
   border-radius: 5px;
   padding: 10px;
   border: 1px solid #ccc;
 }
 
 .form__input:active,
-.form__input:focus {
+.form__input:focus,
+.form__input--textarea:active,
+.form__input--textarea:focus {
   outline: none;
   border-color: #111;
 }
 
-.form__input.is-invalid {
+.form__input.is-invalid,
+.form__input--textarea.is-invalid {
   border-color: #e7040f;
 }
 

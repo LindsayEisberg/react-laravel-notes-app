@@ -60,3 +60,15 @@ php artisan serve
 ## To View the App
 visit [http://127.0.0.1:8000](http://127.0.0.1:8000) to view the notes app.
 
+## To Perform Unit Tests
+Unit tests have been written using Cypress.
+
+### To start
+make sure server is still running. Then, in the command line, 
+```bash
+npm run test
+```
+When the cypress window opens, use the two links to run the unit tests that have been created.  Current tests include'
+* Making sure app exists, and seeding dummy data as the list of notes
+* routing to the Create New Note route, filling in the input and textarea fields, then submitting the form and redirecting back to the list of notes.
+

@@ -21,9 +21,9 @@ class App extends Component {
     renderNotes() {
         
         return this.state.notes.map(note => (
-            <div key={note.id} className="all-notes">
+            
 
-                <div className="all-notes__item bg-near-white mb3 ">
+                <div key={note.id} className="all-notes__item bg-near-white mb3 ">
                     <Link className="no-underline db pv3 ph4" to={`/${note.id}`}>
                         <h3 className="near-black fw4 no-underline">{note.title}</h3>
                     </Link>
@@ -31,7 +31,7 @@ class App extends Component {
                     {/*<Link to={`/${note.id}/edit`} className="btn btn-small btn-success float-right">Update</Link>
                     <button className="btn btn-small btn-warning float-right" onClick={() => this.handleDelete(note.id)}>Delete</button>*/}
                     
-                </div>
+                
              
             </div>
         ));
@@ -77,7 +77,9 @@ class App extends Component {
                             <img src="images/loader.svg" style={{width: 90}} alt=""/>
                         </div> :
                         <div className="pt3">
-                            {this.renderNotes()}
+                            <div className="all-notes">
+                                {this.renderNotes()}
+                            </div>
                             <div className="flex justify-start btn--container mt4">
                                 <Link className="btn btn--ghost b--near-black ba bw1 dib near-black" to={`/create`}>Create New Note</Link>
                             </div>

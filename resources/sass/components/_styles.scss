@@ -73,7 +73,7 @@
 			@extend .srt;
 		}
 	}
-	&__input {
+	&__input, &__input--textarea {
 		border-radius: 5px;
 		padding: 10px;
 		border: 1px solid $moon-gray;
