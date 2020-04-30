@@ -17,7 +17,7 @@
         "cross-env": "^5.1",
         "cypress": "^3.4.1",
         "cypress-react-unit-test": "^2.4.3",
-        "jquery": "^3.2",
+        "jquery": "^3.5",
         "laravel-mix": "^4.0.7",
         "lodash": "^4.17.13",
         "popper.js": "^1.12",
